@@ -65,22 +65,22 @@ public class Robot extends IterativeRobot {
 	//OUTPUT
 	//Drivetrain
 	//(Front Left, Rear Left, Front Right, Rear Right)
-	final static RobotDrive drivetrain = new RobotDrive(8,9,1,0);
+	final static RobotDrive drivetrain = new RobotDrive(0,1,3,4);
 	final static double differential = 1;
 		
 	//Servo
 	final static Servo cameraServo = new Servo(3);
-	final static Talon pickup = new Talon(5);
+	final static Talon pickup = new Talon(2);
 	final static Spark extendoMotor = new Spark(6);
 	final static Spark winchMotor = new Spark(7);
 	
 	//Pneumatics
 	final static Compressor compressor = new Compressor();
-	final static DoubleSolenoid shootResetSolenoid = new DoubleSolenoid(0,2,3);
-	final static DoubleSolenoid shootLockSolenoid = new DoubleSolenoid(1,6,7);
-	final static DoubleSolenoid driveSolenoid = new DoubleSolenoid(1,0,1);
-	final static DoubleSolenoid okiePokerAirSolenoid = new DoubleSolenoid(1,2,3);
-	final static DoubleSolenoid okiePokerControlSolenoid = new DoubleSolenoid(1,4,5);
+	final static DoubleSolenoid shootResetSolenoid = new DoubleSolenoid(0,1);
+	final static DoubleSolenoid shootLockSolenoid = new DoubleSolenoid(6,7);
+	final static DoubleSolenoid driveSolenoid = new DoubleSolenoid(4,5);
+	final static DoubleSolenoid okiePokerAirSolenoid = new DoubleSolenoid(2,3);
+	//final static DoubleSolenoid okiePokerControlSolenoid = new DoubleSolenoid(1,4,5);
 	
 	//Threads
 	final static DriveThread drive = new DriveThread();

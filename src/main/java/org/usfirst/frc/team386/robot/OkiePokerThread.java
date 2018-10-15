@@ -42,25 +42,25 @@ public class OkiePokerThread extends Thread
 	case DOWN:
 	default:
 	    Robot.okiePokerAirSolenoid.set(DoubleSolenoid.Value.kForward);
-	    Robot.okiePokerControlSolenoid.set(DoubleSolenoid.Value.kReverse);
+	    //Robot.okiePokerControlSolenoid.set(DoubleSolenoid.Value.kReverse);
 	    break;
 	case MIDDLE:
 	    Robot.okiePokerAirSolenoid.set(DoubleSolenoid.Value.kForward);
-	    if(Robot.okiePokerControlSolenoid.get().equals(DoubleSolenoid.Value.kForward))
-		 {
-			Robot.okiePokerControlSolenoid.set(DoubleSolenoid.Value.kReverse);
-		 }
-	    else if(Robot.okiePokerControlSolenoid.get().equals(DoubleSolenoid.Value.kReverse))
-	    {
-		Robot.okiePokerControlSolenoid.set(DoubleSolenoid.Value.kForward);
-	    }
+	    // if(Robot.okiePokerControlSolenoid.get().equals(DoubleSolenoid.Value.kForward))
+		//  {
+		// 	Robot.okiePokerControlSolenoid.set(DoubleSolenoid.Value.kReverse);
+		//  }
+	    // else if(Robot.okiePokerControlSolenoid.get().equals(DoubleSolenoid.Value.kReverse))
+	    // {
+		// Robot.okiePokerControlSolenoid.set(DoubleSolenoid.Value.kForward);
+	    // }
 	    Timer.delay(1);
 	    Robot.okiePokerAirSolenoid.set(DoubleSolenoid.Value.kReverse);
 	    
 	    break;
 	case UP:
 	    Robot.okiePokerAirSolenoid.set(DoubleSolenoid.Value.kForward);
-	    Robot.okiePokerControlSolenoid.set(DoubleSolenoid.Value.kForward);
+	   // Robot.okiePokerControlSolenoid.set(DoubleSolenoid.Value.kForward);
 	    break;
 	}
     }
