@@ -1,6 +1,6 @@
-package org.usfirst.frc.team386.robot;
+package frc.robot;
 
-import org.usfirst.frc.team386.robot.OkiePokerThread.State;
+import frc.robot.OkiePokerThread.State;
 
 import edu.wpi.first.wpilibj.AnalogGyro;
 import edu.wpi.first.wpilibj.Compressor;

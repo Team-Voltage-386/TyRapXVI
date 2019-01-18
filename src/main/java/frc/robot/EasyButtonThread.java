@@ -1,4 +1,4 @@
-package org.usfirst.frc.team386.robot;
+package frc.robot;
 
 public class EasyButtonThread extends Thread {
 	public boolean isEasyButtonRunning = false;
